@@ -5,13 +5,13 @@
 class FileMapper < Formula
   desc "file-mapper: Combines tree and cat in one CLI for recursive project mapping and file content viewing."
   homepage "https://github.com/sky93/file-mapper"
-  version "0.0.10"
+  version "0.0.11"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sky93/file-mapper/releases/download/v0.0.10/file-mapper_0.0.10_darwin_amd64.tar.gz"
-      sha256 "2db3935743db7ebe5459ae404fa3665f51b78833b2b3f53f64c6855fc4b5d5c9"
+      url "https://github.com/sky93/file-mapper/releases/download/v0.0.11/file-mapper_0.0.11_darwin_amd64.tar.gz"
+      sha256 "04acca7cc3c5dabdcb3108b56b9044eb0811716923664ec12ccc9d9abecd7114"
 
       def install
         # This is how the formula installs the binary
@@ -19,8 +19,8 @@ class FileMapper < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sky93/file-mapper/releases/download/v0.0.10/file-mapper_0.0.10_darwin_arm64.tar.gz"
-      sha256 "ae97b3e651a085a3e0e0999162f347b3bf19c9048320f9c90c0709ba20668628"
+      url "https://github.com/sky93/file-mapper/releases/download/v0.0.11/file-mapper_0.0.11_darwin_arm64.tar.gz"
+      sha256 "2de6423e5b47a09b8a00c2637d7b679957ce552bcaaf3f79b686d4c0a6eea7cc"
 
       def install
         # This is how the formula installs the binary
@@ -32,8 +32,8 @@ class FileMapper < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/sky93/file-mapper/releases/download/v0.0.10/file-mapper_0.0.10_linux_amd64.tar.gz"
-        sha256 "f600444462de9d772ded1f43c9281e5f3849f6b99983264b9c19a515fd2e7b19"
+        url "https://github.com/sky93/file-mapper/releases/download/v0.0.11/file-mapper_0.0.11_linux_amd64.tar.gz"
+        sha256 "31948647c78f31bacd64d63c25755b194f502a75720e42696976ab96e35c5ec6"
 
         def install
           # This is how the formula installs the binary
@@ -43,8 +43,8 @@ class FileMapper < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/sky93/file-mapper/releases/download/v0.0.10/file-mapper_0.0.10_linux_arm64.tar.gz"
-        sha256 "369704f0f543bbe43c8327470bdef11b0ad251c3bb9c3c72cf40946381497cca"
+        url "https://github.com/sky93/file-mapper/releases/download/v0.0.11/file-mapper_0.0.11_linux_arm64.tar.gz"
+        sha256 "0a760de36c2cc895ad336ab20a19eba77c1581c182751100df049006525a1b30"
 
         def install
           # This is how the formula installs the binary
